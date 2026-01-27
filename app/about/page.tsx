@@ -59,9 +59,9 @@ const values = [
 
 const stats = [
   { value: "15+", label: "Years Experience" },
-  { value: "500+", label: "Projects Completed" },
+  { value: "5000+", label: "Projects Completed" },
   { value: "100%", label: "Satisfaction Rate" },
-  { value: "50+", label: "5-Star Reviews" },
+  { value: "500+", label: "5-Star Reviews" },
 ]
 
 const team = [
