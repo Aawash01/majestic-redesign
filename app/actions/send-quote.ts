@@ -78,6 +78,6 @@ function generateMailtoLink(formData: QuoteFormData): string {
   return `mailto:${RECIPIENT_EMAIL}?subject=${subject}&body=${body}`
 }
 
-export function getMailtoLink(formData: QuoteFormData): string {
+export async function getMailtoLink(formData: QuoteFormData) {
   return generateMailtoLink(formData)
 }
