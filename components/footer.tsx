@@ -11,12 +11,17 @@ const navLinks = [
 ]
 
 const services = [
-  "Interior Painting",
-  "Exterior Painting",
-  "Commercial Painting",
-  "Residential Painting",
+  "Interior and Exterior Painting",
+  "Epoxy floor coating",
+  "Residential and Commercial Painting",
   "Roof Painting",
-  "Deck Staining",
+  "Deck and patio Staining",
+  "Ceiling and Fence Painting",
+  "Garage floor coating",
+  "Texture and plaster painting",
+  "Cabinet and furniture painting",
+  "Industrial painting",
+  "Pressure washing and surface prep",
 ]
 
 export function Footer() {

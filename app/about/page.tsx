@@ -61,7 +61,7 @@ const stats = [
   { value: "15+", label: "Years Experience" },
   { value: "5000+", label: "Projects Completed" },
   { value: "100%", label: "Satisfaction Rate" },
-  { value: "500+", label: "5-Star Reviews" },
+  { value: "5000+", label: "5-Star Reviews" },
 ]
 
 const team = [

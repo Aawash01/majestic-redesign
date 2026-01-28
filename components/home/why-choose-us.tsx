@@ -3,7 +3,7 @@ import { Award, Clock, Shield, Users } from "lucide-react"
 const features = [
   {
     icon: Award,
-    title: "15+ Years Experience",
+    title: "10+ Years Experience",
     description:
       "Decades of expertise delivering exceptional painting results for homes and businesses across Sydney.",
   },
@@ -67,10 +67,11 @@ export function WhyChooseUs() {
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground px-8 py-4 rounded-xl shadow-xl text-center">
-            <div className="text-4xl font-bold">500+</div>
+          <div className="absolute -bottom-22 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground px-8 py-4 rounded-xl shadow-xl text-center">
+            <div className="text-4xl font-bold">5000+</div>
             <div className="text-sm opacity-90">Projects Completed</div>
           </div>
+          
         </div>
       </div>
     </section>

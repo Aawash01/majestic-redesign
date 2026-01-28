@@ -25,7 +25,7 @@ const services = [
     icon: Home,
     title: "Residential Painting",
     description:
-      "Transform your home with our comprehensive residential painting services. From single rooms to complete home makeovers, we deliver stunning results that enhance your living space.",
+      "Transform your home with the professional residential painting services from Majestic Painting and Decorating. Whether you’re updating a single room, refreshing your exterior, or planning a complete home makeover, our skilled painters deliver beautiful, long-lasting results that enhance both the comfort and value of your property.",
     features: [
       "Interior and exterior painting",
       "Wall preparation and repairs",
@@ -38,9 +38,9 @@ const services = [
 
   {
     icon: Home,
-    title: "Wood Vanish",
+    title: "Wood Varnish",
     description:
-      "Our premium wood vanishing services enhance the natural grain of your timber while providing a durable, high-gloss or matte protective shield against moisture and daily wear.",
+      "At Majestic Painting and Decorating, our premium wood varnishing services are designed to protect, preserve, and enhance the natural beauty of your timber surfaces. We bring out the richness of the wood grain while applying a strong, long-lasting protective finish that stands up to moisture, sunlight, and everyday wear and tear.",
     features: [
       "Enhanced Natural Beauty",
       "UV Resistance",
@@ -53,7 +53,7 @@ const services = [
     icon: Building2,
     title: "Commercial Painting",
     description:
-      "Professional painting solutions for businesses of all sizes. We work around your schedule to minimize disruption while delivering exceptional results that enhance your professional image.",
+      "We deliver professional commercial painting services tailored to businesses of all sizes. We understand that your workplace represents your brand, which is why we focus on creating clean, modern, and professional-looking spaces that leave a lasting impression on clients and staff alike.",
     features: [
       "Office and retail spaces",
       "Industrial facilities",
@@ -67,21 +67,20 @@ const services = [
     icon: Paintbrush,
     title: "Interior Painting",
     description:
-      "Create the perfect atmosphere inside your property with our expert interior painting services. We handle everything from feature walls to complete interior transformations.",
+      "Create the perfect atmosphere inside your property with the expert interior painting services from Majestic Painting and Decorating. Whether you’re refreshing a single room or planning a complete interior makeover, our skilled painters deliver smooth, flawless finishes that transform your space",
     features: [
       "Walls and ceilings",
       "Feature walls and accents",
       "Kitchen and bathroom repaints",
       "Wallpaper removal and preparation",
     ],
-    image:
-      "https://images.unsplash.com/photo-1562259949-e8e7689d7828?q=80&w=2031&auto=format&fit=crop",
+     image: "/services/interior-painting.jpeg",
   },
   {
     icon: PaintBucket,
     title: "Exterior Painting",
     description:
-      "Protect and beautify your property exterior with our durable painting solutions. We use premium paints designed to withstand Australian weather conditions.",
+      "Enhance the appearance of your property while protecting it from harsh weather with expert exterior painting services from Majestic Painting and Decorating. We combine skilled workmanship with high-quality, weather-resistant paints specially formulated for tough Australian conditions — including strong sun, heavy rain, wind, and coastal air.",
     features: [
       "Weatherboard and brick painting",
       "Render and masonry coatings",
@@ -95,21 +94,62 @@ const services = [
     icon: Droplets,
     title: "Roof Painting",
     description:
-      "Extend the life of your roof and improve your property's curb appeal with our professional roof painting services. We use specialized coatings for lasting protection.",
+      "Protect your home and boost its street appeal with expert roof painting services from Majestic Painting and Decorating. A properly painted roof doesn’t just look great — it also helps extend the life of your roofing materials by providing an extra layer of protection against harsh Australian weather conditions.",
     features: [
       "Tile and metal roof painting",
       "Pressure cleaning and preparation",
       "Protective sealant application",
       "Rust treatment and prevention",
     ],
-    image:
-      "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?q=80&w=2065&auto=format&fit=crop",
+    image: "/services/roof-painting.jpeg",
+  },
+
+  {
+    icon: Layers,
+    title: "Water Proofing",
+    description:
+      "We provide reliable and long-lasting waterproofing solutions to protect your property from water damage, leaks, and moisture-related issues. Proper waterproofing not only prevents costly structural damage but also helps maintain a safe and healthy environment inside your home or building.",
+    features: [
+      "Impermeable Barrier",
+      "Structural Preservation",
+      "Mildew and Mold Prevention",
+      "Enhanced Durability and Value",
+    ],
+    image: "/services/water-proofing.jpeg",
+  },
+  {
+    icon: Layers,
+    title: "Venetian Plaster Walls",
+    description:
+      "A wall Venetian refers to a decorative wall finish created using Venetian plaster. This technique gives walls a smooth, polished, and often marble-like appearance, adding depth, texture, and elegance to any space. It’s more than just paint — it’s a finishing art that transforms plain walls into a luxurious surface.",
+    features: [
+      "Distinctive Visual Depth",
+      "Versatile Sheen Levels",
+      "Natural Durability",
+      "Breathability and Mold Resistance",
+    ],
+    image: "/services/venetian-plaster.jpeg",
+  },
+
+
+   {
+    icon: Layers,
+    title: "Concrete Sealing",
+    description:
+      "At Majestic Painting and Decorating, we use high-quality sealers and professional techniques to ensure a long-lasting, even finish that protects your concrete while improving its look",
+    features: [
+      "Moisture and Freeze-Thaw Protection",
+      "Stain and Chemical Resistance",
+      "Surface Strengthening and Dustproofing",
+      "Color and Texture Enhancement",
+    ],
+    
   },
   {
     icon: Layers,
     title: "Specialty Finishes",
     description:
-      "Add unique character to your space with our specialty finishing services. From textured walls to faux finishes, we bring artistic touches to your property.",
+      "We go beyond standard painting to create distinctive surfaces that add personality, depth, and elegance to your space. Our specialty finishing services are perfect for clients who want something unique and eye-catching rather than a simple flat colour.",
     features: [
       "Textured and decorative finishes",
       "Epoxy floor coatings",
@@ -136,7 +176,7 @@ export default function ServicesPage() {
               Professional Painting Services
             </h1>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed">
-              From residential homes to commercial buildings, we offer a comprehensive range of painting services to meet all your needs with quality and care.
+              At Majestic Painting and Decorating, we provide high-quality painting solutions for both residential and commercial properties. Whether you’re refreshing a single room, renovating your home, or upgrading the look of a large commercial building, our experienced team delivers outstanding results with precision and care.
             </p>
           </div>
         </section>
