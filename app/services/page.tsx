@@ -35,6 +35,20 @@ const services = [
     image:
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=2070&auto=format&fit=crop",
   },
+
+  {
+    icon: Home,
+    title: "Wood Vanish",
+    description:
+      "Our premium wood vanishing services enhance the natural grain of your timber while providing a durable, high-gloss or matte protective shield against moisture and daily wear.",
+    features: [
+      "Enhanced Natural Beauty",
+      "UV Resistance",
+      "Versatile Finishes",
+      "Chemical Resistance",
+    ],
+   image: "/services/wood-vanish.jpeg",
+  },
   {
     icon: Building2,
     title: "Commercial Painting",
