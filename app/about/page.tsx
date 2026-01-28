@@ -61,7 +61,7 @@ const stats = [
   { value: "15+", label: "Years Experience" },
   { value: "5000+", label: "Projects Completed" },
   { value: "100%", label: "Satisfaction Rate" },
-  { value: "5000+", label: "5-Star Reviews" },
+  { value: "500+", label: "5-Star Reviews" },
 ]
 
 const team = [
@@ -178,7 +178,7 @@ export default function AboutPage() {
                   Sydney&apos;s Trusted Painting Professionals
                 </h1>
                 <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-                  For over 15 years, Majestic Painting has been transforming homes and businesses across Sydney with exceptional painting services. Our commitment to quality, reliability, and customer satisfaction has made us a trusted name in the industry.
+                  For over 10 years, Majestic Painting has been transforming homes and businesses across Sydney with exceptional painting services. Our commitment to quality, reliability, and customer satisfaction has made us a trusted name in the industry.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
                   We believe that a fresh coat of paint can do more than just change the look of a space—it can transform how you feel in it. That&apos;s why we approach every project with care, precision, and a genuine passion for our craft.
