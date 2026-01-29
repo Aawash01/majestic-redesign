@@ -33,7 +33,7 @@ export async function sendQuoteRequest(formData: QuoteFormData) {
         Accept: "application/json",
       },
       body: JSON.stringify({
-        access_key: "ab93f01a-d6fe-4e05-9a77-8eaeed61ba9d",
+        access_key: "76c46de0-86d8-4e6c-9c08-8923988b90f7",
         to: RECIPIENT_EMAIL,
         from_name: "Majestic Painting Website",
         subject: `New Quote Request from ${name} - ${service || "General Inquiry"}`,
