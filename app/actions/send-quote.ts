@@ -8,7 +8,7 @@ interface QuoteFormData {
   message: string
 }
 
-const RECIPIENT_EMAIL = "ab93f01a-d6fe-4e05-9a77-8eaeed61ba9d"
+const RECIPIENT_EMAIL = "bhandariaawash1@gmail.com"
 
 export async function sendQuoteRequest(formData: QuoteFormData) {
   const { name, email, phone, service, message } = formData
@@ -33,7 +33,7 @@ export async function sendQuoteRequest(formData: QuoteFormData) {
         Accept: "application/json",
       },
       body: JSON.stringify({
-        access_key: "bhandariaawash1@gmail.com",
+        access_key: "ab93f01a-d6fe-4e05-9a77-8eaeed61ba9d",
         to: RECIPIENT_EMAIL,
         from_name: "Majestic Painting Website",
         subject: `New Quote Request from ${name} - ${service || "General Inquiry"}`,
