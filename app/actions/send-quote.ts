@@ -8,7 +8,7 @@ interface QuoteFormData {
   message: string
 }
 
-const RECIPIENT_EMAIL = "bhandariaawash1@gmail.com"
+const RECIPIENT_EMAIL = "ab93f01a-d6fe-4e05-9a77-8eaeed61ba9d"
 
 export async function sendQuoteRequest(formData: QuoteFormData) {
   const { name, email, phone, service, message } = formData

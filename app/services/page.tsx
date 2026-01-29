@@ -143,7 +143,7 @@ const services = [
       "Surface Strengthening and Dustproofing",
       "Color and Texture Enhancement",
     ],
-    
+    image: "/services/concrete.jpeg",
   },
   {
     icon: Layers,
