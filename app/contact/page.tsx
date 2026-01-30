@@ -30,15 +30,10 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email",
-    content: "info@majesticpainting.com.au",
-    href: "mailto:info@majesticpainting.com.au",
+    content: "info.majesticpainting@gmmail.com",
+    href: "info.majesticpainting@gmmail.com",
   },
-  {
-    icon: MapPin,
-    title: "Location",
-    content: "34 Bowden Street, Guildford, NSW 2161",
-    href: "https://maps.google.com/?q=34+Bowden+Street+Guildford+NSW+2161",
-  },
+ 
   {
     icon: Clock,
     title: "Business Hours",
@@ -294,18 +289,7 @@ export default function ContactPage() {
         </section>
 
         {/* Map Section */}
-        <section className="h-96 bg-muted">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.5!2d150.9876!3d-33.8523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12a3b0c1a2d3e4%3A0x5f6g7h8i9j0k1l2m!2s34%20Bowden%20St%2C%20Guildford%20NSW%202161!5e0!3m2!1sen!2sau!4v1706000000000!5m2!1sen!2sau"
-            width="100%"
-            height="100%"
-            style={{ border: 0 }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title="Majestic Painting - 34 Bowden Street, Guildford, NSW 2161"
-          />
-        </section>
+        
       </main>
       <Footer />
     </>

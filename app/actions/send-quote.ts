@@ -8,8 +8,6 @@ interface QuoteFormData {
   message: string
 }
 
-const RECIPIENT_EMAIL = "bhandariaawash1@gmail.com"
-
 export async function sendQuoteRequest(formData: QuoteFormData) {
   const { name, email, phone, service, message } = formData
 
@@ -24,8 +22,19 @@ export async function sendQuoteRequest(formData: QuoteFormData) {
     return { success: false, error: "Please enter a valid email address" }
   }
 
+  const accessKey = process.env.WEB3FORMS_ACCESS_KEY
+
+  if (!accessKey) {
+    console.error("WEB3FORMS_ACCESS_KEY is not set")
+    return {
+      success: false,
+      error: "Email service is not configured. Please contact us directly.",
+      fallback: true,
+      mailtoLink: generateMailtoLink(formData),
+    }
+  }
+
   try {
-    // Use Web3Forms free tier - no API key required for basic usage
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
       headers: {
@@ -33,8 +42,7 @@ export async function sendQuoteRequest(formData: QuoteFormData) {
         Accept: "application/json",
       },
       body: JSON.stringify({
-        access_key: "76c46de0-86d8-4e6c-9c08-8923988b90f7",
-        to: RECIPIENT_EMAIL,
+        access_key: accessKey,
         from_name: "Majestic Painting Website",
         subject: `New Quote Request from ${name} - ${service || "General Inquiry"}`,
         name: name,
@@ -42,7 +50,7 @@ export async function sendQuoteRequest(formData: QuoteFormData) {
         phone: phone || "Not provided",
         service: service || "Not specified",
         message: message,
-        botcheck: false,
+        replyto: email,
       }),
     })
 
@@ -51,31 +59,33 @@ export async function sendQuoteRequest(formData: QuoteFormData) {
     if (result.success) {
       return { success: true }
     } else {
-      // Return mailto link as fallback
-      return { 
-        success: true, 
+      console.error("Web3Forms error:", result)
+      return {
+        success: false,
+        error: result.message || "Failed to send message. Please try again.",
         fallback: true,
-        mailtoLink: generateMailtoLink(formData)
+        mailtoLink: generateMailtoLink(formData),
       }
     }
   } catch (error) {
     console.error("Error sending quote request:", error)
-    // Return mailto link as fallback
-    return { 
-      success: true, 
+    return {
+      success: false,
+      error: "Failed to send message. Please try again or use the email link below.",
       fallback: true,
-      mailtoLink: generateMailtoLink(formData)
+      mailtoLink: generateMailtoLink(formData),
     }
   }
 }
 
 function generateMailtoLink(formData: QuoteFormData): string {
   const { name, email, phone, service, message } = formData
+  const recipientEmail = "bhandariaawash1@gmail.com"
   const subject = encodeURIComponent(`Quote Request from ${name} - ${service || "General Inquiry"}`)
   const body = encodeURIComponent(
     `Name: ${name}\nEmail: ${email}\nPhone: ${phone || "Not provided"}\nService: ${service || "Not specified"}\n\nMessage:\n${message}`
   )
-  return `mailto:${RECIPIENT_EMAIL}?subject=${subject}&body=${body}`
+  return `mailto:${recipientEmail}?subject=${subject}&body=${body}`
 }
 
 export async function getMailtoLink(formData: QuoteFormData) {
