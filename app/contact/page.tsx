@@ -18,8 +18,13 @@ import {
   Send,
   AlertCircle,
 } from "lucide-react"
+<<<<<<< HEAD
 
 import { sendQuoteRequest } from "@/app/actions/send-quote"
+=======
+import { sendQuoteRequest, getMailtoLink } from "@/app/actions/send-quote"
+
+>>>>>>> ef90ecc5a81a1f3b3115713138e45af314eb8c34
 const contactInfo = [
   {
     icon: Phone,

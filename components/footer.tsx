@@ -17,11 +17,11 @@ const services = [
   "Roof Painting",
   "Deck and patio Staining",
   "Ceiling and Fence Painting",
-  "Garage floor coating",
+  "Wall venetian",
   "Texture and plaster painting",
   "Cabinet and furniture painting",
   "Industrial painting",
-  "Pressure washing and surface prep",
+  
 ]
 
 export function Footer() {
